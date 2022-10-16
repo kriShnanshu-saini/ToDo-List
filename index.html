@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="style.css"> 
+    <script src="https://kit.fontawesome.com/90725778de.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="panel">
+            <ul class="todo-lists">
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                    </svg>
+                    <a href="#" class="list-name" data-count="5">Home</a>
+                </li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
+                    </svg>
+                    <a href="#" class="list-name" data-count="7">Today</a></li>
+                <li>
+                    <i class="fa-solid fa-user"></i>
+                    <a href="#" class="list-name" data-count="4">Personal</a></li>
+                <li>
+                    <i class="fa-solid fa-car-side"></i>
+                    <a href="#" class="list-name" data-count="2">Road trip</a></li>
+                <li>
+                    <i class="fa-solid fa-briefcase"></i>
+                    <a href="#" class="list-name" data-count="4">Work</a></li>
+            </ul>
+
+            <button class="btncreate">+</button>
+            <input type="text" placeholder="Create new list" aria-label="create new list">
+        </div>
+
+        <div class="content">
+
+            <section class="welcome-section">
+                <img src="./images/sitting-boy.svg" alt="">
+                <p class="welcome__title">Good morning, Alex</p>
+                <p class="welcome__subtitle">It's Wednesday, Feb 22</p>
+            </section>
+
+            <section class="create-task">
+                    <input type="text" placeholder="Write a new task" aria-label="Write a new task">
+                </section>
+
+            <section class="lists__showcase">
+                <div class="task">
+                    <input type="checkbox" id="task-1" />
+                    <label for="task-1" class="task__title" data-date="10 Oct">
+                        <span class="custom-checkbox"></span>
+                        Book table at Escort
+                    </label>
+                    <div class="cta-btn">
+                        <button class="edit btn">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                        </button>
+                        <button class="delete btn">
+                            <i class="fa-solid fa-trash"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="task">
+                    <input type="checkbox" id="task-2">
+                    <label for="task-2">
+                        <span class="custom-checkbox"></span>
+                        Book a hotel room</label>
+                        <div class="cta-btn">
+                            <button class="edit btn">
+                                <i class="fa-solid fa-pen-to-square"></i>
+                            </button>
+                            <button class="delete btn">
+                                <i class="fa-solid fa-trash"></i>
+                            </button>
+                        </div>
+                </div>
+                <div class="task">
+                    <input type="checkbox" id="task-3">
+                    <label for="task-3" data-date="19 Oct">
+                        <span class="custom-checkbox"></span>
+                        Make a project by diwali break</label>
+                        <div class="cta-btn">
+                            <button class="edit btn">
+                                <i class="fa-solid fa-pen-to-square"></i>
+                            </button>
+                            <button class="delete btn">
+                                <i class="fa-solid fa-trash"></i>
+                            </button>
+                        </div>
+                </div>
+                <div class="task">
+                    <input type="checkbox" id="task-4">
+                    <label for="task-4">
+                        <span class="custom-checkbox"></span>
+                        Water plants</label>
+                        <div class="cta-btn">
+                            <button class="edit btn">
+                                <i class="fa-solid fa-pen-to-square"></i>
+                            </button>
+                            <button class="delete btn">
+                                <i class="fa-solid fa-trash"></i>
+                            </button>
+                        </div>
+                </div>
+                <div class="task">
+                    <input type="checkbox" id="task-5">
+                    <label for="task-5">
+                        <span class="custom-checkbox"></span>
+                        Buy groceries</label>
+                        <div class="cta-btn">
+                            <button class="edit btn">
+                                <i class="fa-solid fa-pen-to-square"></i>
+                            </button>
+                            <button class="delete btn">
+                                <i class="fa-solid fa-trash"></i>
+                            </button>
+                        </div>
+                </div>
+                <button class="delete-list-btn">
+                    <i class="fa-solid fa-trash"></i> Delete All
+                </button>
+                
+            </section>
+        </div>
+
+    </div>
+</body>
+</html>
