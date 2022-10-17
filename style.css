@@ -19,11 +19,6 @@ body{
     width: 100%;
     min-height: 100vh;
     padding: .3em;
-    /* position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; */
 }
 svg{
     width: 1em;
@@ -54,10 +49,8 @@ a{
     width: 100%;
 }
 .panel li::after{
-    content: attr(data-count);
+    content:attr(data-count);
     position: absolute;
-    width: 2em;
-    height: 2em;
 }
 .panel li:hover,
 .panel li:active,
@@ -130,6 +123,10 @@ input:focus{
     font-weight: 500;
     letter-spacing: .5px;
 }
+/* =================================================== */
+/* OBJECTIVE :- when placeholder is not shown, +ADD button should be visible with my transform effect
+    add a class in .create-task when this input is focused to transform:scale(1.01)*/
+/* =================================================== */
 .create-task input:focus:enabled
 {
     transform:scale(1.05);
